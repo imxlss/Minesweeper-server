@@ -12,6 +12,6 @@ router.all('/api/*', async (ctx, next) => {
 
 router
   .post('/api/append_score', ScoreController.appendScore)
-  .get('/api/ranking_list', ScoreController.getRankingList)
+  .get('/api/ranking_list', ScoreController.getRankingList);
 
 module.exports = router;
