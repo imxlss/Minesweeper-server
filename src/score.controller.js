@@ -34,7 +34,7 @@ class ScoreController {
         updatedAt: 0
       }
     )
-      .sort('-duration')
+      .sort('duration')
       .limit(Number(topNumber));
 
     return (ctx.body = {
