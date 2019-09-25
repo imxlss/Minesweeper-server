@@ -7,6 +7,7 @@ const ScoreController = require('./score.controller');
 router.all('/api/*', async (ctx, next) => {
   ctx.set('Access-Control-Allow-Origin', 'http://localhost:8000');
   ctx.set('Access-Control-Allow-Credentials', 'true');
+  ctx.set('Access-Control-Allow-Headers', 'Content-Type');
   await next();
 });
 
